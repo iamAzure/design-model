@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>requestAnimationFrame 示例</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            position: relative;
+        }
+        .controls {
+            text-align: center;
+            margin: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="controls">
+        <button onclick="startAll()">开始所有动画</button>
+        <button onclick="stopAll()">停止所有动画</button>
+    </div>
+    <div class="container">
+        <div>
+            <h3>requestAnimationFrame</h3>
+            <div id="rafBox" class="box"></div>
+        </div>
+        <div>
+            <h3>setTimeout</h3>
+            <div id="timeoutBox" class="box"></div>
+        </div>
+        <div>
+            <h3>setInterval</h3>
+            <div id="intervalBox" class="box"></div>
+        </div>
+    </div>
+    <script src="animation.js"></script>
+</body>
+</html> 

@@ -1,0 +1,12 @@
+{
+  "name": "design-model",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "wb_liutao <wb_liutao@meituan.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.15.12",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}

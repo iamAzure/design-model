@@ -1,17 +1,17 @@
 // 抽象产品 - 椅子
-interface Chair {
+export interface Chair {
     hasLegs(): boolean;
     sitOn(): string;
 }
 
 // 抽象产品 - 沙发
-interface Sofa {
+export interface Sofa {
     hasLegs(): boolean;
     lieOn(): string;
 }
 
 // 抽象工厂
-interface FurnitureFactory {
+export interface FurnitureFactory {
     createChair(): Chair;
     createSofa(): Sofa;
 } 

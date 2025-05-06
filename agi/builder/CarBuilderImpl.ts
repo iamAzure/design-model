@@ -1,5 +1,8 @@
 // 具体生成器：通用汽车建造者
-class CarBuilderImpl implements CarBuilder {
+import { CarBuilder } from "./CarBuilder";
+import { Car } from "./Car";
+
+export class CarBuilderImpl implements CarBuilder {
     private car: Car;
 
     constructor() {

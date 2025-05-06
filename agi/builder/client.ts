@@ -1,7 +1,9 @@
+import { Director } from "./Director";
+import { CarBuilderImpl } from "./CarBuilderImpl";
+
 // 客户端代码
 const director = new Director();
 const builder = new CarBuilderImpl();
-
 director.setBuilder(builder);
 director.constructSportsCar();
 

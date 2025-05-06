@@ -1,3 +1,5 @@
+import { Chair, Sofa, FurnitureFactory } from "./interfaces";
+
 // 具体产品 - 复古椅子
 class VintageChair implements Chair {
     hasLegs(): boolean {
@@ -21,7 +23,7 @@ class VintageSofa implements Sofa {
 }
 
 // 具体工厂 - 复古家具工厂
-class VintageFurnitureFactory implements FurnitureFactory {
+export class VintageFurnitureFactory implements FurnitureFactory {
     createChair(): Chair {
         return new VintageChair();
     }

@@ -1,10 +1,16 @@
-1.实现具体的产品
-2.定义抽象 Builder 接口
-3.实现具体的 Builder 
-    3.1 在 constructor 中实例化产品
-    3.2 实现 reset 方法，用于重置 Production 的配置
-    3.3 实现 getResult 方法，返回 Production 实例
-4.实现 Direction
-    4.1 实现 setBuilder 接口，指定具体的的 Builder
-    4.2 实现具体的 createProduction（如： createSportCar、createSUV）
-5.调用 builder 的 getResult 拿到产品实例
+# 建造者模式
+> 建造者模式是一种创建型设计模式，它允许你分步骤创建复杂对象。建造者模式将复杂对象的构建过程与其表示分离，使得同样的构建过程可以创建不同的表示。
+
+## 使用场景
+1. 当需要创建复杂对象，且创建过程应该独立于该对象的组成部分时
+2. 当需要创建的对象有多个组成部分，且需要保证这些部分之间的兼容性时
+3. 当需要创建的对象有多个表示形式时
+4. 当需要控制对象的创建过程时
+
+## 实现步骤
+1. 定义产品类（Product）
+2. 创建抽象建造者（Builder）接口
+3. 创建具体建造者（ConcreteBuilder）类
+4. 创建指挥者（Director）类
+5. 在指挥者类中定义构建过程
+6. 客户端通过指挥者创建产品
