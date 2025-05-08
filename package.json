@@ -5,7 +5,10 @@
   "author": "wb_liutao <wb_liutao@meituan.com>",
   "license": "MIT",
   "devDependencies": {
+    "@types/ali-oss": "^6.16.11",
+    "@types/chokidar": "^2.1.7",
     "@types/node": "^22.15.12",
+    "@types/sharp": "^0.32.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   }

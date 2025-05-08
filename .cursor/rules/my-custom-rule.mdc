@@ -1,0 +1,8 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+-使用 Node 18 , 可以使用 nvm 命令切换到 18 版本
+-使用 pnpm 作为 Node 包管理工具
+
